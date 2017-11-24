@@ -50,4 +50,5 @@ predicates
 ```
 
 Результат работы: 
+
 ![group](https://github.com/ivanleontev/prolog/blob/master/DOSBox%200.74%2C%20Cpu%20speed_%20%20%20%20%203000%20cycles%2C%20Frameskip%20%200%2C%20Program_%20%20%20PROLOG%202017-11-25%2000.35.24.png)
