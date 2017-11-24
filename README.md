@@ -26,3 +26,25 @@ prolog.exe
 
 ![group](https://github.com/ivanleontev/prolog/blob/master/DOSBox%200.74%2C%20Cpu%20speed_%20%20%20%20%203000%20cycles%2C%20Frameskip%20%200%2C%20Program_%20%20%20PROLOG%202017-11-25%2000.25.15.png)
 
+Пример программы взятой с просторов:
+
+```prolog
+predicates
+	parent(String, String)
+	male(String)
+	female(String)
+	brother(String, String)
+	print
+ clauses
+ 	parent("Tom","Jake").
+ 	parent("Janna","Jake").
+	parent("Tom","Tim").
+ 	parent("Janna","Tim").
+	male("Tom").
+	male("Tim").
+	male("Jake").
+	female("Janna").
+	
+	brother(X,Y):-parent(Z,X), parent(Z,Y), male(X),X<>Y.
+	print:-brother(X,Y), write(X,"- btar- ", Y), nl, fail.
+```
